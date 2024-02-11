@@ -1,0 +1,14 @@
+/* contact styles */
+
+.contact {
+  width: 500px;
+  padding: 3rem 3rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--mudyellow);
+  color: var(--ltblue);
+}
+
+.contact p:last-child {
+  margin-top: 3rem;
+}

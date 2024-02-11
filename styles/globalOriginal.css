@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&family=Space+Mono&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+
+  --ltblue: #474073;
+  --skyblue: #9be2f2;
+  --mudyellow: #a68a56;
+  --ltorange: #f26e22;
+  --dkorange: #f24405;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--magenta);
+}
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* intro styles */
+#intro {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+}
+
+/* background color divs */
+
+.section-plum {
+  background-color: var(--plum);
+}
+
+.section-dkblue {
+  background-color: var(--dkblue);
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+  height: 2px;
+}
+
+.button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: var(--mono);
+  color: var(--white);
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}

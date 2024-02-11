@@ -1,0 +1,60 @@
+/*navbar*/
+
+.nav {
+  font-family: var(--mono);
+  font-size: 80%; /*take base font and reduce it by*/
+  padding: 3rem;
+}
+
+.nav h1 a {
+  font-family: var(--sans);
+}
+
+.nav h1 a [class*="fa-"] {
+  font-size: 100%;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.nav a {
+  color: var(--dkorange);
+  text-decoration: none;
+  display: block;
+}
+
+.nav a:hover,
+.nav [class*="fa-"]:hover {
+  color: var(--ltblue);
+}
+
+.nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--dkorange);
+}
+
+@media (min-width: 850px) {
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
